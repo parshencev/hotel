@@ -34,7 +34,16 @@ body{
   text-align: center;
 }
 .logo{
-  margin-top:26px;
+  display:block;
+  margin:26px auto;
+}
+.main_link{
+  margin-top:10px;
+  text-decoration:none;
+  font-size: 14px;
+  line-height: 26px;
+  color: #1757f1;
+  border-bottom: 1px solid rgba(23,87,241,.35);
 }
 #menu{
   margin-bottom:20px;
@@ -56,13 +65,17 @@ body{
   }
 }
 h1{
-  font-size: 14px;
+  font-size: 17px;
   font-weight: normal;
   line-height: 33px;
   padding-top:22px;
 }
 h1,h2{
   margin: 0;
+}
+strong{
+  font-size: 23px;
+  color: #e77918;
 }
 address{
   font-style:normal;
@@ -124,6 +137,9 @@ p{
 .colored{
   background:rgba(136, 161, 253, 0.21);
 }
+#map{
+  margin-bottom: 50px;
+}
 #popup{
   position:fixed;
   top:0;
@@ -153,11 +169,16 @@ p{
     font-size: 40px;
     line-height: 12px;
     border-radius: 50%;
-    background: #f44;
+    background: #000;
     color: #FFF;
     font-weight: bold;
     cursor: pointer;
     outline: none;
+    opacity:.5;
+    transition:opacity .3s ease;
+    &:hover{
+      opacity:1;
+    }
   }
 }
 @keyframes window{
